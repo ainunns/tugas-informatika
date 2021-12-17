@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+	<title>Cara menjalankan program C++ di Windows Subsystem Linux (WSL) | Blog | Ainun's World</title>
+	<link rel="icon" href="../assets/rocket.png">
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
+	<link rel="stylesheet" type="text/css" href="../css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="../css/blog.css">
+	<link rel="stylesheet" type="text/css" href="../css/guestbook.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/loading.css">
+	<script src="script/loading.js"></script> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="pesan">
+		<p>Please use a desktop or wider screen to see this website</p>
+	</div>
+	<div id="cekWidth">	
+		<div id="atas">
+			<div id="menu">
+				<ul class="unlist">
+					<li class="list"><a href="../index.html#home">Home</a></li>
+					<li class="list"><a href="../index.html#captain">Tentang</a></li>
+					<li class="dropdown list">
+						<a href="../index.html#lounge" class="dropbtn" >Ruang Bersantai</a>
+					<div class="dropdown-content">
+						<a href="../index.html#blog">Blog</a>
+						<a href="../index.html#video">Video</a>
+					</div>
+				  </li>
+					<li class="list"><a href="../guestbook.html">Buku Tamu</a></li>
+				</ul>		
+			</div>
+		</div>
+		<div id="contents">
+			<div class="ibox">
+				<div id="boxx">
+					<h1 class="judul" style="text-align: center;">Cara menjalankan program C++ di Windows Subsystem Linux (WSL)</h1>
+					<h2 class="judul">Pengertian WSL</h2>
+					<p>Menurut <a href="https://id.wikipedia.org/wiki/Subsistem_Windows_untuk_Linux">wikipedia</a>, Windows Subsystem for Linux merupakan lapisan kompatibilitas untuk menjalankan biner linux yang dapat dijalankan (dalam bentuk ELF) secara alami di Windows 10.</p>
+					<h2 class="judul">Cara Install WSL</h2>
+					<ol>
+						<li>
+							Install WSL
+							<ul class="didalam">
+								<li>Buka Windows Powershell, run as administrator</li>
+								<li>Tambahkan command ini di Windows Powershell<br><script src="https://gist.github.com/ainunns/3b9538564c2b04c582466f1bca33e107.js"></script></li>
+								<li>Tunggu sampai instalasi selesai dan restart komputer Anda</li>
+							</ul>
+						</li>
+						<li>
+							Install Distro Linux (Ubuntu)
+							<ul class="didalam">
+								<li>Buka Microsoft Store</li>
+								<li>Cari dan download Ubuntu 20.04 LTS</li>
+								<li>Buka Ubuntu 20.04 LTS kemudian buat UNIX username dan password</li>
+							</ul>
+						</li>
+						<li>Install C++ compiler menggunakan g++
+							<script src="https://gist.github.com/ainunns/2fa2c9b48a10d48fce69e73ec8944cc5.js"></script>
+							cek apakah g++ sudah terinstall atau belum menggunakan script ini
+							<script src="https://gist.github.com/ainunns/b0d2d2893509b3ebf61a49c3406b5d62.js"></script>
+						</li>
+						<li>Install visual studio code (VS Code) <a href="https://code.visualstudio.com/download">disini</a></li>
+						<li>Install extension remote WSL di VS Code</li>
+						<li>Buka WSL, jalankan script ini <script src="https://gist.github.com/ainunns/094c1462a47aac87d8199d6e9a71d408.js"></script></li>
+					</ol>
+					<h2 class="judul">Cara menjalankan program C++ di Ubuntu</h2>
+					<ol>
+						<li>Buat kode c++ di VS Code.<br>Misalkan kode tersebut adalah <script src="https://gist.github.com/ainunns/f2b3d374b38e76c3b38624306a219048.js"></script></li>
+						<li>
+							Compile kode c++ tadi di Ubuntu menggunakan script ini 
+							<script src="https://gist.github.com/ainunns/cf7d7b24f34e3bfdf2df2c4f4d2b134d.js"></script>
+							sesuaikan <code>nama_file</code> dengan nama file di kode c++ Anda. contohnya apabila nama filenya <code>halodunia.cpp</code>, maka cara compilenya adalah
+							<script src="https://gist.github.com/ainunns/8ffb8c6efbaef3c92d18ad27105c5a4c.js"></script>
+						</li>
+						<li>Jalankan kode c++ anda di Ubuntu menggunakan script ini <script src="https://gist.github.com/ainunns/161ad7a3a35c3bac6d17392088941c9e.js"></script>
+						sesuaikan <code>nama_file</code> dengan nama file di kode c++ Anda. contohnya apabila nama filenya <code>halodunia.cpp</code>, maka cara menjalankan kode tersebut adalah
+							<script src="https://gist.github.com/ainunns/4c9eb9da84fbc78f0022e38fed4f8016.js"></script></li>
+					</ol>
+					<p>tada, selamat anda berhasil membuat program c++ di WSL!</p>
+				</div>
+			</div>
+			<img src="../assets/dark-space.png" alt="dark-space" loading="lazy" class="bcg">
+			<img src="../assets/dark-space.png" alt="dark-space" loading="lazy" class="bcg" style="margin-top:-4px">
+			<img src="../assets/dark-space.png" alt="dark-space" loading="lazy" class="bcg" style="margin-top:-4px">
+		</div>
+		<div id="copyright">
+			dibuat dengan penuh kasih sayang oleh Ainun  &copy 2021
+		</div>
+		<script src="../scripts/home.js" type="text/javascript"></script>
+	</div>
+</body>
+</html>

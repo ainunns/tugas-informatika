@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+	<title>Buku Tamu | Ainun's World</title>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/guestbook.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<link rel="icon" href="assets/rocket.png">
+	<!-- <link rel="stylesheet" type="text/css" href="css/loading.css">
+	<script src="script/loading.js"></script> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="pesan">
+		<p>Please use a desktop or wider screen to see this website</p>
+	</div>
+	<div id="cekWidth">
+		<div id="menu">
+			<ul class="unlist">
+				<li class="list"><a href="index.html#home">Home</a></li>
+				<li class="list"><a href="index.html#captain">Tentang</a></li>
+				<li class="dropdown list">
+					<a href="index.html#lounge" class="dropbtn" >Ruang Bersantai</a>
+					<div class="dropdown-content">
+						<a href="index.html#blog">Blog</a>
+						<a href="index.html#video">Video</a>
+					</div>
+			  	</li>
+			  	<li class="list"><a href="guestbook.html">Buku Tamu</a></li>
+			</ul>		
+		</div>
+		<div id="register">
+			<div class="ibox">
+				<h2 class="judul">.</h2>
+				<div id="boxx">
+					<h3 class="judul">buku tamu</h3>
+					<form method="post" id="sheetdb-form" action="https://sheetdb.io/api/v1/4m0g3udzq25jr">
+						<label for="nama">Nama<span>*</span></label><br><br>
+						<input type="text" name="data[nama]" required><br><br>
+						<label for="kelas">Kelas<span>*</span></label><br><br>
+						<select name="data[kelas]">
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="none">kuliah</option>
+						</select>
+						<br><br>
+						<label for="firstImpression">Kesan<span>*</span></label> <br><br>
+						<textarea name="data[firstImpression]" rows="4" cols="50" required></textarea><br><br>
+						<label for="rating">Nilai website ini dari 1-10?<span>*</span></label><br><br>
+						<input type="range" name="data[rating]" min="1" max="10" step="1" value="5" onchange="show_value(this.value);"><br><br>
+						<ul class="listg">
+							<li id="val1">1</li>
+							<li id="val2">2</li>
+							<li id="val3">3</li>
+							<li id="val4">4</li>
+							<li id="val5" style="font-weight: bolder; font-size: x-large;">5</li>
+							<li id="val6">6</li>
+							<li id="val7">7</li>
+							<li id="val8">8</li>
+							<li id="val9">9</li>
+							<li id="val10">10</li>
+						</ul>
+						<span id="slider_value"></span><br>
+						<label for="kritik">Kritik<span>*</span></label><br><br>
+						<textarea name="data[kritik]" rows="4" cols="50" required></textarea><br><br>
+						<label for="saran">Saran<span>*</span></label><br><br>
+						<textarea name="data[saran]" rows="4" cols="50" required></textarea><br><br>
+						<button type="submit">kirim!</button>
+					</form>
+				</div>
+			</div>
+			<img src="assets/nebula.png" alt="nebula" loading="lazy" class="bcg">
+			<img src="assets/nebula2.png" alt="nebula2" loading="lazy" class="bcg" style="margin-top: -4px;">
+		</div>
+		<div id="copyright">
+			dibuat dengan penuh kasih sayang oleh Ainun  &copy 2021
+		</div>
+		<script src="scripts/form.js" type="text/javascript"></script>
+		<script src="scripts/home.js" type="text/javascript"></script>
+	</div>
+</body>
+</html>

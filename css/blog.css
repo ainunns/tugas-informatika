@@ -1,0 +1,19 @@
+#atas{
+	padding: 10px 0px;
+	background-color: #178ecf;
+}
+.judul{
+	color: #000000;
+	text-align: left;
+}
+#boxx{
+	background-color: #A7DAF5;
+	padding: 3%;
+}
+.didalam{
+	padding-left: 40px;
+}
+code{
+	font-family: "Lucida Console", Courier, monospace;
+	font-size: small;
+}
